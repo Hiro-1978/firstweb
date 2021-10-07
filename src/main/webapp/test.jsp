@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ page import="firstweb.*" %>
  
 <!DOCTYPE html>
 <html>
@@ -18,6 +19,15 @@
 	</select>
 	<!-- Code JSP แบบย่อ -->
 	<b><%= i %></b>
-	Name : <%= request.getParameter("fname") %>
+	Name : <%= request.getParameter("fname") %><br><br>
+	<!--ทำหน้าที่เป็น View ที่รับค่าจาก DetailConcroller -->
+	<%
+		Product result = (Product)request.getAttribute("result");
+	%>
+	
+	<b><%=result.getProductName() %></b><br>
+	<b><%=result.getProductDetail() %></b><br>
+	<b>ราคา<%=result.getPrice() %> บาท</b>
+	
 </body>
 </html>
