@@ -1,0 +1,67 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>ServletDemo</servlet-name>
+  	<display-name>ServletDemo</display-name>
+  	<description></description>
+  	<servlet-class>firstweb.ServletDemo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ListProduct</servlet-name>
+  	<display-name>ListProduct</display-name>
+  	<description></description>
+  	<servlet-class>firstweb.ListProduct</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WriteCookie</servlet-name>
+  	<display-name>WriteCookie</display-name>
+  	<description></description>
+  	<servlet-class>cookiesession.WriteCookie</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadCookie</servlet-name>
+  	<display-name>ReadCookie</display-name>
+  	<description></description>
+  	<servlet-class>cookiesession.ReadCookie</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WriteSession</servlet-name>
+  	<display-name>WriteSession</display-name>
+  	<description></description>
+  	<servlet-class>cookiesession.WriteSession</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ReadSession</servlet-name>
+  	<display-name>ReadSession</display-name>
+  	<description></description>
+  	<servlet-class>cookiesession.ReadSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletDemo</servlet-name>
+  	<url-pattern>/ServletDemo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ListProduct</servlet-name>
+  	<url-pattern>/ListProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WriteCookie</servlet-name>
+  	<url-pattern>/WriteCookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadCookie</servlet-name>
+  	<url-pattern>/ReadCookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WriteSession</servlet-name>
+  	<url-pattern>/WriteSession</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ReadSession</servlet-name>
+  	<url-pattern>/ReadSession</url-pattern>
+  </servlet-mapping>
+</web-app>
